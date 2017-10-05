@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		td#azul{
+			background-color:blue;
+		}
+		td#rojo{
+			background-color:red;
+		}
+		td#naranja{
+			background-color:orange;
+		}
+		table#t01{
+			border:1px solid black; width:275px; height:50px;
+			margin:0 auto;	
+		}
+		table#t01 td{
+			border:1px solid black;
+		}
+		table#t01 th{
+			border:1px solid black;
+		}
+		table#t02{
+			width:235px;
+			margin:0 auto;
+		}
+		
+		table#t03{
+			width:275px; height:50px;
+			margin:0 auto;
+		}
+		table#t04{
+			margin:0 auto;
+		}
+		td{
+			text-align:center;
+		}
+		h1, h3{
+			text-align:center;
+		}
+		
+	</style>
+	<meta charset="UTF-8">
+		<title>Tableros del Juego</title>
+	</head>
+	<body>
+		<h1> Tableros de juego </h1>
+		<h3> Tablero con menús de selección </h3>
+		<div>
+			<form action="">
+				<table id="t01" >
+					<tr>
+						<td> </td>
+						<th> A </th>
+						<th> B </th>
+						<th> C </th>
+						<th> D </th>
+					</tr>
+					<tr>
+						<th> 1 </th>
+						<td id="azul"> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> 2 </th>
+						<td> </td>
+						<td id="rojo"> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> 3 </th>
+						<td> </td>
+						<td id="rojo"> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> 4 </th>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td id="naranja"> </td>
+					</tr>
+				</table>
+				<table id="t02">
+					<tr>
+						<td>
+							<select name="filas">
+					    		<option value="1"> 1 </option>
+					    		<option value="2"> 2 </option>
+					    		<option value="3"> 3 </option>
+					    		<option value="4"> 4 </option>
+							</select>
+						</td>
+						<td>
+							<select name="columnas">
+					    		<option value="A"> A </option>
+					    		<option value="B"> B </option>
+					    		<option value="C"> C </option>
+					   		 	<option value="D"> D </option>
+							</select>
+						</td>
+						<td>
+							<input type="submit" value="Enviar">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<h3> Tablero con botones en las casillas </h3>
+		<div>
+			<form action="">
+				<table id="t03">
+					<tr>
+						<td> </td>
+						<th> A </th>
+						<th> B </th>
+						<th> C </th>
+						<th> D </th>
+					</tr>
+					<tr>
+						<th> 1 </th>
+						<td id="azul"> <input type="radio" name="casilla" value="1-A">
+						<td> <input type="radio" name="casilla" value="1-B"> </td>
+						<td> <input type="radio" name="casilla" value="1-C"> </td>
+						<td> <input type="radio" name="casilla" value="1-D"> </td>
+					</tr>
+					<tr>
+						<th> 2 </th>
+						<td> <input type="radio" name="casilla" value="2-A"> </td>
+						<td id="rojo"> <input type="radio" name="casilla" value="2-B">
+						<td> <input type="radio" name="casilla" value="2-C"> </td>
+						<td> <input type="radio" name="casilla" value="2-D"> </td>
+					</tr>
+					<tr>
+						<th> 3 </th>
+						<td> <input type="radio" name="casilla" value="3-A"> </td>
+						<td id="rojo"> <input type="radio" name="casilla" value="3-B">
+						<td> <input type="radio" name="casilla" value="3-C"> </td>
+						<td> <input type="radio" name="casilla" value="3-D"> </td>
+					</tr>
+					<tr>
+						<th> 4 </th>
+						<td> <input type="radio" name="casilla" value="4-1"> </td>
+						<td> <input type="radio" name="casilla" value="4-B"> </td>
+						<td> <input type="radio" name="casilla" value="4-C"> </td>
+						<td id="naranja"> <input type="radio" name="casilla" value="4-D">
+					</tr>
+				</table>
+				<table id="t04">
+					<tr>
+						<td> </td>
+						<td> </td>
+						<td><input type="submit" value="Enviar"></td>
+						<td> </td>
+						<td> </td> 
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

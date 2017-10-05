@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		table, td{
+			text-align:justify;
+		}
+		form{
+			text-align:left; max-width:80%; max-height:80%;
+			margin:0 auto;
+		}
+		legend{
+			color:blue; font-size:200%;
+		}
+		
+	</style>
+	<meta charset="UTF-8">
+		<title> Registro Jugadores </title>
+	</head>
+	<body>
+		<div>
+			<form action="">
+				<fieldset>
+					<legend> Registro de jugadores de "Hundir la Flota" </legend>
+						<table>
+							<tr>
+								<td>Nombre (*):	</td>
+								<td><input type="text" name="nombre" required autofocus> </td>
+							</tr>
+							<tr>
+								<td>Primer apellido (*): </td>
+								<td><input type="text" name="primerApellido" required></td>
+							</tr>
+							<tr>
+								<td>Segundo apellido: </td>
+								<td><input type="text" name="segundoApellido"></td>
+							</tr>
+							<tr>
+								<td>DNI (*): </td>
+								<td><input type="text" name="dni" required></td>
+							</tr>
+							<tr>
+								<td>Email: </td>
+								<td><input type="email" name="email"></td>
+							</tr>
+							<tr>
+								<td>Tipo de pago (*): </td>
+								<td><input type="radio" name="pago" value="contrareembolso" required> Contrareembolso
+											 <input type="radio" name="pago" value="tarjetaVisa"> Tarjeta VISA
+											 <input type="radio" name="pago" value="cheque"> Cheque
+								</td>
+							</tr>
+							<tr>
+								<td>Contraseña (*): </td>
+								<td><input type="password" name="contraseña" required></td>
+							</tr>
+							<tr>
+								<td>Repita su contraseña (*): </td>
+								<td><input type="password" name="contraseñaRepetida" required></td>
+							</tr>
+							<tr>
+								<td><input type="Submit" value="Enviar Datos"></td>
+								<td><input type="Reset" value="Borrar Datos"></td>
+							</tr>
+						</table>
+				</fieldset>  
+				(*)Los campos con asterisco son obligatorios
+			</form>
+		</div>
+	</body>
+</html>
