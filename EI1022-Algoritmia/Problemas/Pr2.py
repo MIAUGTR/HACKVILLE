@@ -1,8 +1,9 @@
 '''
-Created on 27 sept. 2017
+Created on 4 oct. 2017
 
 @author: mariu
 '''
+
 
 from algoritmia.datastructures.mergefindsets import MergeFindSet
 from algoritmia.datastructures.digraphs import UndirectedGraph
@@ -35,6 +36,31 @@ def crea_laberinto(nfil, ncol):
 laberinto = crea_laberinto(20, 50)
 
 lv = LabyrinthViewer(laberinto, canvas_width=600, canvas_height=400, margin=10)
+
+
+
+def path(g: 'grafo', source: 'celdaInicial', target: 'celdaFinal'):
+    
+    def explorarDesde(vertice):
+        camino.append(vertice)
+        visto.add(vertice)
+        if vertice == target:
+            return True
+        for suc in g.succs(vertice):
+            if suc not in visto:
+                if explorarDesde(suc):
+                    return True
+        camino.pop()
+        return False   
+    
+    camino = []
+    visto = set()
+    explorarDesde(source)
+    return camino
+
+
+lv.add_path(path(laberinto, (0,0), (19, 49)))
+
 lv.run()
 
 
