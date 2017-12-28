@@ -3,7 +3,6 @@ Created on 19 jun. 2017
 
 @author: MariusMiau
 '''
-import time
 def busca(v, i, j):
     if len(v[i:j]) == 3:
         k = (i + j) // 2
